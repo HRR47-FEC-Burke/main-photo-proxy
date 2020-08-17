@@ -1,0 +1,23 @@
+{
+  "name": "main-photo-proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HRR47-FEC-Burke/main-photo-proxy.git"
+  },
+  "author": "Steven Walker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HRR47-FEC-Burke/main-photo-proxy/issues"
+  },
+  "homepage": "https://github.com/HRR47-FEC-Burke/main-photo-proxy#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
