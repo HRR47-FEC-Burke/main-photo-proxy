@@ -1,5 +1,5 @@
 
-body {
+/* body {
   position: relative;
   margin: 0;
   margin-top: 1rem;
@@ -46,4 +46,118 @@ body {
   bottom: 1rem;
   left: 3.5rem;
 
+} */
+
+/* body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  margin-top: 1rem;
+  overflow-x: hidden;
+}
+
+ #main-photo > div {
+  left: 0;
+  top: 0;
+}
+
+#main-photo {
+  position: relative;
+  min-width: 800px;
+  max-width: 800px;
+}
+
+#sb {
+
+}
+
+#sb > div > div {
+
+}
+
+#reviews {
+  position: relative;
+}
+
+#sln {
+
+
+} */
+
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+#top {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+
+  /* left: 22.5vw; */
+  margin: 0 auto;
+  /*margin-left: auto;
+  margin-right: auto; */
+}
+
+#main-photo {
+  position: relative;
+  align-content: center;
+  top: 1rem;
+  min-width: 30rem;
+  max-width: 700px;
+  width: 40vw;
+}
+#main-photo > div {
+  left: 0;
+  top: 0;
+}
+
+#sb {
+  position: relative;
+  margin: -2rem 0;
+}
+
+#sb > div > div {
+  margin: 0;
+  margin-top: 3rem;
+  margin-left: 3rem;
+  max-width: 700px;
+  width: 90%;
+}
+
+#reviews > div > div {
+  position: relative;
+  margin-left: 0;
+  margin-right: 0;
+  min-width: 20rem;
+  max-width: 700px;
+  width: 40vw;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  #main-photo {
+  }
+
+  #reviews > div > div {
+    width: 100%;
+  }
+
+  #sb {
+    margin-left: 5%;
+    margin-right: 0;
+    }
+
+  #sb > div > div {
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  }
 }
