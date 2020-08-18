@@ -1,13 +1,9 @@
 
 body {
-  display: grid;
   position: relative;
   margin: 0;
-  height: 100%;
+  margin-top: 1rem;
   overflow-x: hidden;
-  /* grid-template-columns: auto auto;
-  grid-template-rows: auto auto auto;
-  align-content: space-around; */
 }
 
 #main-photo > div {
@@ -23,10 +19,17 @@ body {
 }
 
 #sb {
-  position: sticky;
-  left: 50rem;
-  max-width: 700px;
-  width: 90%;
+  position: absolute;
+  max-width: 500px;
+  top: 0;
+  right: 30%;
+  width: 10%;
+}
+
+#sb > div > div {
+  top: 0;
+  margin: 0;
+  width: 330%;
 }
 
 #reviews {
@@ -34,13 +37,13 @@ body {
   left: 3.75rem;
   min-width: 20rem;
   max-width: 700px;
-  width: 36vw;
 }
 
 #sln {
+  display: inline-block;
   position: relative;
   width: 1250px;
-  left: -2.2rem;
-  grid-row: 3/4;
-  grid-column: 1/3;
+  bottom: 1rem;
+  left: 3.5rem;
+
 }
