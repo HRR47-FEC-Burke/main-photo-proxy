@@ -1,49 +1,93 @@
 
+
 body {
   position: relative;
   margin: 0;
-  margin-top: 1rem;
-  overflow-x: hidden;
+}
+#top {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
 }
 
+#main-photo {
+  position: relative;
+  align-content: center;
+  top: 1rem;
+  min-width: 30rem;
+  max-width: 700px;
+  width: 40vw;
+}
 #main-photo > div {
   left: 0;
   top: 0;
 }
 
-#main-photo {
-  position: relative;
-  left: 6.5rem;
-  min-width: 20rem;
-  max-width: 700px;
-}
-
 #sb {
-  position: absolute;
-  max-width: 500px;
-  top: 0;
-  right: 30%;
-  width: 10%;
+  position: relative;
+  margin: -2rem 0;
 }
 
 #sb > div > div {
-  top: 0;
   margin: 0;
-  width: 330%;
+  margin-top: 3rem;
+  margin-left: 3rem;
+  max-width: 700px;
+  width: 90%;
 }
 
-#reviews {
+#bottom {
   position: relative;
-  left: 3.75rem;
+  top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+#reviews > div > div {
+  position: relative;
+  width: 100vw;
+  left: 15.6vw;
   min-width: 20rem;
   max-width: 700px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 #sln {
-  display: inline-block;
   position: relative;
-  width: 1250px;
-  bottom: 1rem;
-  left: 3.5rem;
+  right: 3vw;
+}
 
+
+ @media only screen and (max-width: 700px) {
+
+  #main-photo {
+    min-width: 20rem;
+    max-width: 700px;
+  }
+
+  #reviews > div > div {
+    width: 100%;
+    top: 2rem;
+    left: -.01rem;
+    margin-bottom: 2rem;
+  }
+
+  #sb {
+    margin-right: 0;
+    }
+
+  #sb > div > div {
+  margin-top: 1;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+  #sln {
+    width:100%;
+  }
 }
