@@ -2,19 +2,14 @@
 
 body {
   position: relative;
-  display: flex;
-  justify-content: center;
   margin: 0;
 }
 #top {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-
-  /* left: 22.5vw; */
-  margin: 0 auto;
-  /*margin-left: auto;
-  margin-right: auto; */
+  justify-content: center;
+  flex-direction: row;
 }
 
 #main-photo {
@@ -43,36 +38,56 @@ body {
   width: 90%;
 }
 
+#bottom {
+  position: relative;
+  top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
 #reviews > div > div {
   position: relative;
-  margin-left: 0;
-  margin-right: 0;
+  width: 100vw;
+  left: 15.6vw;
   min-width: 20rem;
   max-width: 700px;
-  width: 40vw;
   -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#sln {
+  position: relative;
+  right: 3vw;
 }
 
 
-@media only screen and (max-width: 600px) {
+ @media only screen and (max-width: 700px) {
 
   #main-photo {
+    min-width: 20rem;
+    max-width: 700px;
   }
 
   #reviews > div > div {
     width: 100%;
+    top: 2rem;
+    left: -.01rem;
+    margin-bottom: 2rem;
   }
 
   #sb {
-    margin-left: 5%;
     margin-right: 0;
     }
 
   #sb > div > div {
-  margin-top: 0;
+  margin-top: 1;
   margin-left: auto;
   margin-right: auto;
+  }
+
+  #sln {
+    width:100%;
   }
 }
