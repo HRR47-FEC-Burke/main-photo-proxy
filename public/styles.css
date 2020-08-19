@@ -1,93 +1,109 @@
 
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   position: relative;
-  margin: 0;
-}
-#top {
-  position: relative;
+  height: 95vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  flex-direction: row;
+  overflow-x: hidden;
 }
 
 #main-photo {
   position: relative;
-  align-content: center;
-  top: 1rem;
+  top: 1.2rem;
   min-width: 30rem;
   max-width: 700px;
   width: 40vw;
 }
+
 #main-photo > div {
   left: 0;
   top: 0;
 }
 
-#sb {
-  position: relative;
-  margin: -2rem 0;
-}
-
 #sb > div > div {
-  margin: 0;
-  margin-top: 3rem;
-  margin-left: 3rem;
-  max-width: 700px;
-  width: 90%;
-}
-
-#bottom {
   position: relative;
-  top: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  left: 1rem;
+  min-width: 30rem;
+  max-width: 700px;
 }
 
 #reviews > div > div {
   position: relative;
-  width: 100vw;
-  left: 15.6vw;
-  min-width: 20rem;
-  max-width: 700px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
+  top: 1.2rem;
+  min-width: 30rem;
+  max-width: 700px;
+  width: 40vw;
+}
+
+#blank {
+  position: relative;
+  min-width: 30.9rem;
+  max-width: 700px;
+
 }
 
 #sln {
   position: relative;
-  right: 3vw;
+  top: 1.2rem;
+  right: .3vw;
+  min-width: 30rem;
+  max-width: 700px;
+  width: 80vw;
 }
 
 
- @media only screen and (max-width: 700px) {
+
+@media only screen and (max-width: 600px) {
+
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
 
   #main-photo {
-    min-width: 20rem;
-    max-width: 700px;
+    top: 0;
+    min-width: 90vw;
+    max-width: 600px;
   }
 
   #reviews > div > div {
-    width: 100%;
-    top: 2rem;
-    left: -.01rem;
-    margin-bottom: 2rem;
+    left: .75rem;
+    top: 0;
+    position: relative;
+    width: 90vw;
+    min-width: 90vw;
+    max-width: 700px;
   }
 
   #sb {
-    margin-right: 0;
-    }
+    min-width: 10vw;
+    max-width: 700px;
+  }
 
   #sb > div > div {
-  margin-top: 1;
-  margin-left: auto;
-  margin-right: auto;
+    top: 0;
+    min-width: 90vw;
+    max-width: 700px;
+    width: 90vw;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #blank {
+    width: 0;
   }
 
   #sln {
-    width:100%;
+    right: 1rem;
+    top: 0;
+    min-width: 25rem;
+    width: 10vw;
   }
 }
