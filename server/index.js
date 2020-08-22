@@ -13,7 +13,7 @@ app.use('/item/:id', express.static(path.join(__dirname, './../public')));
 
 app.use('*/photo/api', createProxyMiddleware({ target: 'http://3.23.171.227', changeOrigin: true }));
 
-app.use('*/sb/api', createProxyMiddleware({ target: sbTarget, changeOrigin: true }));
+app.use('*/sb/api', createProxyMiddleware({ target: 'http://15.164.155.96/', changeOrigin: true }));
 
 app.use('*/reviews/api', createProxyMiddleware({ target: 'http://50.18.135.245', changeOrigin: true }));
 
