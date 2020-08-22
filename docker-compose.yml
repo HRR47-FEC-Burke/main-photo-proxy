@@ -1,0 +1,14 @@
+version: "3.7"
+
+services:
+  listing:
+    build: .
+    image: node:12-alpine
+    working_dir: /main-photo-proxy
+    command: sh -c "npm install --production"
+    ports:
+      - "80:4000"
+    restart: always
+    volumes:
+      - ./:/main-photo-proxy
+    command: sh -c "npm start"
